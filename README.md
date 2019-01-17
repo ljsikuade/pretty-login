@@ -1,5 +1,6 @@
 # Pretty-Login
 
+![](loginshowcase.gif)
 A fun little login/sign up page that uses React's CSSTransition addon to toggle a
 pop-up and slide-up of the login and create new user menus.
 
