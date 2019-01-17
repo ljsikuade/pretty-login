@@ -1,0 +1,37 @@
+{
+  "name": "login",
+  "version": "1.0.0",
+  "description": "A Simple but pretty login",
+  "scripts": {
+    "dev": "npm-run-all --parallel build-dev open:src",
+    "build-dev": "webpack --config webpack.config.dev.js --mode development --watch",
+    "open:src": "babel-node server.js"
+  },
+  "author": "Luke",
+  "license": "MIT",
+  "dependencies": {
+    "hbs": "^4.0.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.2.0",
+    "react-transition-group": "^2.5.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "7.1.1",
+    "body-parser": "1.18.3",
+    "css-loader": "0.25.0",
+    "express": "^4.16.4",
+    "file-loader": "^3.0.1",
+    "npm-run-all": "3.1.1",
+    "open": "0.0.5",
+    "style-loader": "0.13.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1"
+  }
+}

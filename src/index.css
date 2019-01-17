@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.core-app {
+  min-height: 100vh;
+}
+
+.front-page-nav {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #5cdb95;
+}
+
+.front-page-login {
+  align-self: flex-end;
+  width: 120px;
+  margin-left: 0.5rem;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #05386b;
+  border: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.front-page-learn-more {
+  align-self: center;
+  color: #05386b;
+  cursor: pointer;
+}
+
+.front-page-head-piece {
+  font-family: "Staatliches", cursive;
+  font-weight: normal;
+  font-size: 3rem;
+  width: 100%;
+  height: 400px;
+  text-align: left;
+  padding-left: 2rem;
+  background-color: #5cdb95;
+  color: #f1f1f1;
+}
+
+.swish {
+  z-index: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: 0;
+  top: 4rem;
+  border-bottom: 600px solid #4f82f1;
+  border-left: 900px solid transparent;
+  margin: 0;
+}
+
+.slogan-underline-collective {
+  display: flex;
+}
+
+.here {
+  margin: 0;
+  margin-left: 5px;
+  line-height: 1.6;
+  text-decoration: underline;
+}
+.front-page-slogan {
+  margin: 0;
+  padding-top: 0.5rem;
+}
+.front-page-about-line {
+  margin: 0;
+}
+.get-started-button {
+  margin-top: 0.5rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: #03284d;
+  background-color: #5be59d;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 100ms ease-in-out;
+}
+
+.get-started-button:hover {
+  background-color: #61f3a8;
+}
+
+.sign-up-section {
+  position: absolute;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1rem;
+  top: 4rem;
+  right: 4rem;
+}
+
+.sign-up-form-title {
+  margin: 0;
+  font-size: 0.5em;
+  color: #05386b;
+}
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #05386b;
+  padding: 2rem;
+  z-index: 1;
+  -webkit-box-shadow: -7px 6px 11px -3px rgba(0, 0, 0, 0.25);
+  box-shadow: -7px 2px 11px -3px rgba(0, 0, 0, 0.25);
+  height: 354px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.sign-up-input {
+  border: none;
+  border-radius: 2px;
+  margin: 0.5rem 0;
+  font-size: 0.5em;
+  padding: 0.3rem;
+}
+
+.rest-of-app-temp {
+  z-index: 2;
+  height: 900px;
+  background-color: #edf5e1;
+  position: relative;
+}
+
+.login-section {
+  position: absolute;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 4rem;
+  right: 4rem;
+}
+
+.login-form-title {
+  font-size: 0.5em;
+  color: #05386b;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #05386b;
+  padding: 2rem;
+  border-radius: 5px;
+  z-index: 1;
+  -webkit-box-shadow: -7px 6px 11px -3px rgba(0, 0, 0, 0.25);
+  box-shadow: -7px 6px 11px -3px rgba(0, 0, 0, 0.25);
+  font-size: 0.8em;
+}
+
+/*For login animations******************************************************/
+.fade-enter {
+  opacity: 0.01;
+  transform: scale(0.9);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 300ms ease-out;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.fade-exit-active {
+  opacity: 0.01;
+  transform: scale(0.9);
+  transition: all 300ms ease-out;
+}
+
+.rise-enter {
+  transform: translateY(100%);
+}
+.rise-enter-active {
+  transform: translateY(0%);
+  transition: all 300ms ease-out;
+}
+.rise-exit {
+  transform: translateY(0%);
+}
+.rise-exit-active {
+  transform: translateY(100%);
+  transition: all 300ms ease-out;
+}
+
+.email-input {
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.password-input {
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+}
+
+.login-button {
+  width: 60%;
+  text-align: center;
+  border: none;
+  background-color: #5be59d;
+  color: #03284d;
+  border-radius: 5px;
+  margin-top: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.5rem;
+}
+
+.login-button:hover {
+  background-color: #61f3a8;
+}
